@@ -1,0 +1,21 @@
+v=[25,32,20,24,28]
+h=[23,27,30,26,22,25]
+vp=0
+hp=0
+for i in range(v):
+  for j in range(h):
+    if (i<j):
+      vp+=10 and hp-=2
+    elif (j<i):
+      vp-=2 and hp+=10
+    elif (i==0):
+      vp-=2 and hp+=10
+    elif (j==0):
+      vp+=10 and hp-=2
+    else (i==j):
+      vp=0 and hp=0
+ print(vp)
+ print(hp)
+    
+      
+    
